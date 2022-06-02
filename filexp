@@ -1,0 +1,53 @@
+.\" Manpage for filexp.
+.\" Błędy można zgłaszać na adres "s183269@student.pg.edu.pl" .
+.TH man 8 "05 June 2021" "1.0" "instrukcja man dla filexp"
+.SH NAZWA
+.B ./filexp
+- prosta przeglądarka plików na komputerze 
+.SH STRESZCZENIE
+.B ./filexp
+uruchamia przeglądarkę plików i folderów w katalogu wywołania
+.SH OPIS
+.PP
+.B filexp
+to prosta, uruchamiana w terminalu, przeglądarka plików i folderów.
+.PP
+.B filexp
+umożliwia przeglądanie, usuwanie, kopiowanie, przenoszenie plików i folderów
+.PP
+.B filexp
+umozliwia zmianę nazw, uprawnień dostępu oraz atrybutów plików i folderów
+.PP
+.B filexp
+umożliwia otwieranie i edycję plików tekstowych. Zarówno za pomocą programów uruchamianych w terminalu, jak i programów powłoki graficznej (zaimplementowano otwieranie i edycję w gedit).
+.SH OPCJE
+.B filexp
+przyjmuje następujące dodatkowe opcje uruchamiania:
+.PP
+.B [-v] --version
+wyświetla wersję oprogramowania i informację o autorze
+.PP
+.B [-h] --help
+wyświetla krótką pomoc
+.SH PLIKI
+.BI ~/.tmp/temp.txt
+katalog i plik tworzone podczas procesu edycji atrybutów pliku. Zostają automatycznie utworzone po wybraniu opcji edycji atrybutów i usunięte po zakończeniu tego procesu.
+
+.BI ~/filexp.rc
+plik konfiguracyjny - pozwla na zdefiniowanie:
+
+-czy domyslnie po uruchomieniu maja wyswietlac sie ukryte pliki i foldery
+
+-listy roszerzen plikow otwieranych za pomoca edytorow i przegladarek tekstowych
+.SH BŁĘDY
+.PP 
+.B Brak raportowania błędów nadania atrybutow dla plików.
+Aby upewnic sie czy atrybuty zostaly zmienione zgodnie z zadaniem, nalezy ponownie uruchomic opcje zmiany, gdzie wyswietla sie aktualne atrybuty. Tuz po zmianie - uzyskane atrybuty sa wyswietlane w dolnej linii wiadomosci.
+.PP
+.B Odswiezanie ekranu
+nalezy zaktualizowac w taki sposob aby wyeliminowac niepozadane, denerwujace migotanie ekranu.
+.PP
+.B Przegladanie struktury katalogow
+odbywa sie tylko wglad struktury wzgledem katalogu, w ktorym uruchomiono
+.SH AUTOR
+Adam Chojaczyk (adam@ulinia8.pl)
